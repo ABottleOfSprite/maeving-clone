@@ -1,0 +1,30 @@
+.charging-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 80vh;
+  width: 100vw;
+  padding-inline: 5rem;
+
+  .left {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    max-width: 50ch;
+  }
+
+  .right {
+    max-height: 60vh;
+    overflow: hidden;
+
+    video {
+      outline: 1px solid red;
+      object-fit: cover;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+}

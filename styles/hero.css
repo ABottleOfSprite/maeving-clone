@@ -1,0 +1,91 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+  video {
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.8);
+  }
+
+  /* 
+    TODO
+    - [] Make hero section consume full viewport height for smaller devices.
+  */
+
+  .hero__title {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: .4rem;
+  }
+
+  .hero__subTitle {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .hero__companyInfo {
+    position: absolute;
+    bottom: 10rem;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+
+  .hero__buttonContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .hero__button {
+    font-size: 1.2rem;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border-radius: 0.125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 600ms ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.541);
+      scale: 1.0125;
+    }
+  }
+
+  .exploreBtn {
+    border: 1px solid white;
+    background-color: rgba(250, 235, 215, 0.39);
+    backdrop-filter: blur(0.2rem);
+  }
+
+  .testRideBtn {
+    border: 1px solid white;
+    backdrop-filter: blur(0.2rem);
+  }
+}
+
+.hero__button:active video {
+  filter: brightness(0.8) hue-rotate(230deg);
+}

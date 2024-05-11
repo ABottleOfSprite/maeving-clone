@@ -1,0 +1,58 @@
+/* 
+  TODO 
+  - [] Make responsive (bars for smaller devices)
+  - [] Add cart drop down
+  - [] Add "bikes" drop down
+  - [] Add "New riders" drop down
+  - [] Add "Test Ride" down
+  - [] Add "Accessories" down
+  - [] Add "Articles" down
+  - [] Add "Riding Electric" drop down
+
+*/
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.8rem;
+  padding-inline: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(250, 235, 215, 0.322);
+  backdrop-filter: blur(0.4rem);
+
+  .logo img {
+    filter: brightness(0) contrast(5);
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+
+    li {
+      font-size: 0.8rem;
+      font-weight: 600;
+      
+      a {
+        text-decoration: none;
+        transition: font-weight 500ms ease-in-out;
+
+        &:hover {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  .nav-tools {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.125rem;
+  }
+}
